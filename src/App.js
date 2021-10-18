@@ -10,8 +10,12 @@ function App() {
       <AppText Tag='h3'italic p text='react' />
       <AppText Tag='h3'hidden text='react' />
       <AppText Tag='h3'title text='react' />
+      <AppText Tag='h3'banner stroke text='bernard' />
+      <AppText Tag='h3'banner text='sydney' />
       <AppButton aboutButton />
+      <br />
       <AppButton contactButton />
+
     </>
   );
 }

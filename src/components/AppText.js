@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AppText = (props) => {
-    const { Tag, text, italic, bold, h3, p, span, hidden, title, date } = props;
+    const { Tag, text, italic, bold, banner, stroke, h3, p, span, hidden, title, date } = props;
 
     let cssText = {
         fontFamily: "'Montserrat', 'sans-serif'",
@@ -21,6 +21,21 @@ const AppText = (props) => {
         cssText.fontWeight = 'bold';
     }
 
+    if (banner) {
+        cssText.color = '#000';
+        cssText.fontSize = '120px';
+        cssText.fontWeight = '900';
+        cssText.textTransform = 'uppercase';
+        cssText.margin = '0px';
+        cssText.padding = '0px';
+        cssText.lineHeight = '1.1';
+    }
+
+    if (stroke) {
+        cssText.WebkitTextStroke = '1px #000';
+        cssText.color = 'transparent';
+    }
+    
     if (h3) {
         cssText.textTransform = 'uppercase';
         cssText.fontWeight = '900';
